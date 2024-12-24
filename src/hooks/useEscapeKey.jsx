@@ -12,5 +12,5 @@ export default function useScapeKey(handler) {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  });
+  }, [handler]);
 }
